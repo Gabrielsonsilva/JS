@@ -3,20 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modelo de Exercício</title>
+    <title>Verificador de Idade</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Título</h1>
+        <h1>Verificador de Idade</h1>
     </header>
 
     <section>
         <div>
-            testando...
+           <p>Ano de Nascimento: 
+            <input type="number" name="txtano" id="txtano">
+           </p>
+           <P>Sexo: 
+            <input type="radio" name="radsex" id="mas" checked> <!--Os name dos tipos radios devem ser o mesmo pra que o usuario possa marca somente uma opção-->
+            <label for="mas">Masculino</label>
+            <input type="radio" name="radsex" id="fem">
+            <label for="fem">Femino</label>
+           </P>
+           <p>
+            <input type="button" value="Verificar" onclick="verificar()">
+           </p>
         </div>
-        <div>
-
+        <div id="res">
+            Prencha os dados!
         </div>
     </section>
 
